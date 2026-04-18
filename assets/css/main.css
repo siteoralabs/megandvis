@@ -1,0 +1,113 @@
+:root {
+  --mv-black:       #0D0D0D;
+  --mv-ink:         #0A0A0A;
+  --mv-raised:      #161616;
+  --mv-surface:     #1C1C1C;
+  --mv-line:        #262626;
+  --mv-bone:        #F5F5F0;
+  --mv-mute:        #A8A8A0;
+  --mv-faint:       #6B6B64;
+  --mv-matcha:      #6AAB5E;
+  --mv-matcha-deep: #4A7C59;
+  --mv-gold:        #D4A847;
+  --mv-gold-deep:   #A8822F;
+  --mv-lime:        #C8E84A;
+
+  --mv-font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --mv-font-body:    'DM Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --mv-h2:          clamp(34px, 4.5vw, 52px);
+  --mv-radius:      14px;
+  --mv-radius-lg:   20px;
+
+  --mv-shadow-card: 0 1px 0 rgba(255,255,255,0.04) inset, 0 20px 40px -20px rgba(0,0,0,0.6);
+  --mv-shadow-lift: 0 30px 60px -30px rgba(0,0,0,0.8);
+  --mv-ease:        cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--mv-font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--mv-bone);
+  background: var(--mv-black);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--mv-matcha); color: var(--mv-ink); }
+
+/* ── Scroll reveal ─────────────────────────────── */
+.r { opacity: 0; transform: translateY(16px); }
+.r.on {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.52s var(--mv-ease), transform 0.52s var(--mv-ease);
+}
+
+/* ── Nav ───────────────────────────────────────── */
+.nav-link { transition: color 160ms var(--mv-ease); }
+.nav-link:hover { color: var(--mv-bone) !important; }
+
+/* ── Buttons ───────────────────────────────────── */
+.btn-p {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 22px; border-radius: var(--mv-radius);
+  background: var(--mv-matcha); color: var(--mv-ink);
+  font-family: var(--mv-font-body); font-weight: 600; font-size: 15px;
+  text-decoration: none; border: none; cursor: pointer;
+  transition: background 160ms var(--mv-ease), color 160ms var(--mv-ease);
+}
+.btn-p:hover { background: var(--mv-matcha-deep); color: var(--mv-bone); }
+.btn-p:active { transform: translateY(1px); }
+
+.btn-s {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 22px; border-radius: var(--mv-radius);
+  background: transparent; color: var(--mv-bone);
+  font-family: var(--mv-font-body); font-weight: 600; font-size: 15px;
+  text-decoration: none; border: 1px solid var(--mv-line); cursor: pointer;
+  transition: border-color 160ms var(--mv-ease), color 160ms var(--mv-ease);
+}
+.btn-s:hover { border-color: var(--mv-matcha); color: var(--mv-matcha); }
+.btn-s:active { transform: translateY(1px); }
+
+/* ── Menu cards ────────────────────────────────── */
+.menu-card {
+  transition: transform 280ms var(--mv-ease), box-shadow 280ms var(--mv-ease);
+  cursor: default;
+}
+.menu-card:hover { transform: translateY(-4px); box-shadow: var(--mv-shadow-lift) !important; }
+.menu-card:hover .card-img { transform: scale(1.05) !important; }
+.card-img { transition: transform 280ms var(--mv-ease); }
+
+/* ── Keyframes ─────────────────────────────────── */
+@keyframes mv-slot {
+  0%         { transform: translate(-90px,-12px) rotate(-6deg); opacity: 0; }
+  15%        { transform: translate(-40px,-8px)  rotate(-2deg); opacity: 1; }
+  45%, 55%   { transform: translate(0,0)         rotate(0);     opacity: 1; }
+  70%        { transform: translate(0,14px)       rotate(0);     opacity: 0.3; }
+  71%, 100%  { opacity: 0; }
+}
+@keyframes mv-pickup {
+  0%,  55%   { transform: translateY(40px); opacity: 0; }
+  70%        { transform: translateY(0);    opacity: 1; }
+  95%, 100%  { transform: translateY(0);    opacity: 1; }
+}
+@keyframes mv-blink {
+  0%, 60%, 100% { opacity: 1; }
+  70%, 90%      { opacity: 0.2; }
+}
+
+/* ── Responsive ────────────────────────────────── */
+@media (max-width: 860px) {
+  .hero-grid  { grid-template-columns: 1fr !important; }
+  .slot-wrap  { display: none !important; }
+  .steps-grid { grid-template-columns: 1fr !important; }
+  .vibe-grid  { grid-template-columns: 1fr !important; }
+  .loc-grid   { grid-template-columns: 1fr !important; }
+  .ft-grid    { grid-template-columns: 1fr 1fr !important; }
+  .nav-links  { display: none !important; }
+}

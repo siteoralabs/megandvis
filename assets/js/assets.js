@@ -1,0 +1,15 @@
+window.I = {
+  matchaLatte:      'assets/img/no-bg/MATCHA_LATTE.jpg.png',
+  dirtyMatcha:      'assets/img/no-bg/DIRTY_MATCHA.jpg.png',
+  oatMatcha:        'assets/img/no-bg/OAT_MATCHA_LATTE.jpg.png',
+  matchaBerry:      'assets/img/no-bg/MATCHA_BERRY.jpg.png',
+  matchaBerryCloud: 'assets/img/no-bg/MATCHA_BERRY_CLOUD.jpg.png',
+  coconutMatcha:    'assets/img/no-bg/COCONUT_MATCHA_CLOUD.jpg.png',
+  americano:        'assets/img/no-bg/AMERICANO.jpg.png',
+  kopiSusu:         'assets/img/no-bg/KOPI_SUSU.jpg.png',
+  kopiSusuSS:       'assets/img/no-bg/KOPI_SUSU_SEA_SALT.jpg.png',
+  kopiAren:         'assets/img/no-bg/KOPI_AREN.jpg.png',
+  kopiMelon:        'assets/img/no-bg/KOPI_MELON.jpg.png',
+  chocolate:        'assets/img/no-bg/CHOCOLATE.jpg.png',
+  eggTart:          'assets/img/no-bg/EGG_TART.jpg.png',
+};
