@@ -1,11 +1,11 @@
-const { Nav, Hero, HowItWorks, Menu, Vibe, Location, Footer } = window;
+const { Nav, Hero, HowItWorks, MenuPreview, Vibe, Location, Footer } = window;
 
 const App = () => (
   <>
     <Nav />
     <Hero />
     <HowItWorks />
-    <Menu />
+    <MenuPreview />
     <Vibe />
     <Location />
     <Footer />
