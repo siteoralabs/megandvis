@@ -103,11 +103,25 @@ body {
 
 /* ── Responsive ────────────────────────────────── */
 @media (max-width: 860px) {
-  .hero-grid  { grid-template-columns: 1fr !important; }
-  .slot-wrap  { display: none !important; }
-  .steps-grid { grid-template-columns: 1fr !important; }
-  .vibe-grid  { grid-template-columns: 1fr !important; }
-  .loc-grid   { grid-template-columns: 1fr !important; }
-  .ft-grid    { grid-template-columns: 1fr 1fr !important; }
-  .nav-links  { display: none !important; }
+  .hero-grid    { grid-template-columns: 1fr !important; }
+  .slot-wrap    { display: none !important; }
+  .steps-grid   { grid-template-columns: 1fr !important; }
+  .vibe-grid    { grid-template-columns: 1fr !important; }
+  .loc-grid     { grid-template-columns: 1fr !important; }
+  .ft-grid      { grid-template-columns: 1fr 1fr !important; }
+  .nav-links    { display: none !important; }
+
+  /* Featured cards: 2×2 static grid on mobile — no interaction */
+  .featured-row {
+    flex-wrap: wrap !important;
+    height: auto !important;
+    pointer-events: none;       /* kills tap-triggered active state */
+  }
+  .featured-row > * {
+    flex: 1 1 calc(50% - 6px) !important;
+    min-height: 220px !important;
+  }
+  .feat-label   { display: none !important; }   /* replaced by mobile bar */
+  .feat-content { display: none !important; }   /* desktop-only */
+  .feat-mobile-bar { display: block !important; }
 }
