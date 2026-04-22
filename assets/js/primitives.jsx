@@ -1,20 +1,13 @@
 const { useRef, useEffect } = React;
 
 const Logo = ({ size = 32 }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={size} height={size}
-    style={{ display:'block', flexShrink:0, color:'var(--mv-bone)' }}>
-    <circle cx="50" cy="50" r="48" fill="currentColor"/>
-    <circle cx="22" cy="24" r="10" fill="#fff"/>
-    <circle cx="78" cy="24" r="10" fill="#fff"/>
-    <ellipse cx="50" cy="54" rx="30" ry="26" fill="#fff"/>
-    <ellipse cx="37" cy="48" rx="7" ry="9" fill="currentColor" transform="rotate(-15 37 48)"/>
-    <ellipse cx="63" cy="48" rx="7" ry="9" fill="currentColor" transform="rotate(15 63 48)"/>
-    <circle cx="38" cy="47" r="2.2" fill="#fff"/>
-    <circle cx="62" cy="47" r="2.2" fill="#fff"/>
-    <ellipse cx="50" cy="58" rx="3" ry="2.2" fill="currentColor"/>
-    <rect x="41" y="63" width="18" height="14" rx="1.5" fill="currentColor"/>
-    <rect x="43" y="65" width="14" height="2" fill="#fff" opacity="0.25"/>
-  </svg>
+  <img
+    src="../../assets/img/with-bg/MEGANDVIS.jpg"
+    alt="MEG&ViS"
+    width={size}
+    height={size}
+    style={{ borderRadius: '50%', objectFit: 'cover', display: 'block' }}
+  />
 );
 
 const Eyebrow = ({ children, color = 'var(--mv-matcha)' }) => (
