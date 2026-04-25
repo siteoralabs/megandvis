@@ -12,4 +12,5 @@ window.I = {
   kopiMelon:        'assets/img/no-bg/KOPI_MELON.jpg.png',
   chocolate:        'assets/img/no-bg/CHOCOLATE.jpg.png',
   eggTart:          'assets/img/no-bg/EGG_TART.jpg.png',
+  saltBread:        'assets/img/no-bg/SALT_BREAD.png',
 };

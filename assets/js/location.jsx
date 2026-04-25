@@ -31,7 +31,7 @@ const Location = () => (
                 </div>
               </div>
               <div style={{ display:'flex', gap:10, flexWrap:'wrap' }}>
-                <div style={{ padding:'8px 14px', borderRadius:999, background:'rgba(212,168,71,0.12)', color:'var(--mv-gold)', border:'1px solid rgba(212,168,71,0.24)', fontSize:13, fontFamily:'var(--mv-font-body)', fontWeight:600 }}>Cashless only</div>
+                <div style={{ padding:'8px 14px', borderRadius:999, background:'rgba(212,168,71,0.12)', color:'var(--mv-gold)', border:'1px solid rgba(212,168,71,0.24)', fontSize:13, fontFamily:'var(--mv-font-body)', fontWeight:600 }}>Cashless priority</div>
                 <a href="https://instagram.com/megandvis.idn" style={{ padding:'8px 14px', borderRadius:999, background:'transparent', color:'var(--mv-bone)', border:'1px solid var(--mv-line)', fontSize:13, fontFamily:'var(--mv-font-body)', fontWeight:600, textDecoration:'none', display:'inline-flex', alignItems:'center', gap:6, minHeight:44 }}>
                   <Icon name="instagram" size={14} /> @megandvis.idn
                 </a>

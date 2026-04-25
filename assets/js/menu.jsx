@@ -16,6 +16,7 @@ const ITEMS = [
   { key:'kopi-melon',         name:'Kopi Melon',           cat:'coffee', img:I.kopiMelon,        desc:'Perpaduan kopi dan melon khas Pontianak',     price:'25K'                  },
   { key:'chocolate',          name:'Chocolate',            cat:'coffee', img:I.chocolate,        desc:'Single-origin cacao, slow-melted',            price:'25K'                  },
   { key:'egg-tart',           name:'Egg Tart',             cat:'food',   img:I.eggTart,          desc:'Kulit renyah, custard slow-baked',            price:'18K', tag:'Fresh Daily'},
+  { key:'salt-bread',         name:'Salt Bread',           cat:'food',   img:I.saltBread,        desc:'Rasa asin gurih, Renyah diluar lembut didalam', price:'20K'                  },
 ];
 
 const FILTERS = [

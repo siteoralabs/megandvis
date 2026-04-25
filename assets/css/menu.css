@@ -120,6 +120,7 @@ body {
   height: 680px;
   overflow: hidden;
   margin-top: -8px;
+  touch-action: pan-y;
 }
 
 /* ambient glow blob */
